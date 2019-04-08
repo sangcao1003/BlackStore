@@ -1,5 +1,10 @@
 {
-    "/public/js/admin.js": "/public/js/admin.js",
-    "/public/js/app.js": "/public/js/app.js",
-    "/public/css/app.css": "/public/css/app.css"
+    "/public/js/admin/admin.js": "/public/js/admin/admin.js",
+    "/public/css/app.css": "/public/css/app.css",
+    "/public/js/admin/pages/user.js": "/public/js/admin/pages/user.js",
+    "/public/css/admin/bootstrap.min.css": "/public/css/admin/bootstrap.min.css",
+    "/public/css/admin/AdminLTE.min.css": "/public/css/admin/AdminLTE.min.css",
+    "/public/css/admin/_all-skins.min.css": "/public/css/admin/_all-skins.min.css",
+    "/public/css/admin/select2.min.css": "/public/css/admin/select2.min.css",
+    "/public/css/admin/jquery.datetimepicker.css": "/public/css/admin/jquery.datetimepicker.css"
 }

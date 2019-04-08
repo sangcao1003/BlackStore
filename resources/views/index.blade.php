@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="../../frontend/template/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../frontend/template/bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../frontend/template/dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="../../frontend/template/dist/css/skins/_all-skins.min.css">
+  {!! Html::style('assets/public/css/admin/bootstrap.min.css') !!}
+  {!! Html::style('assets/public/css/admin/font-awesome/css/font-awesome.min.css') !!}
+  {!! Html::style('assets/public/css/admin/AdminLTE.min.css') !!}
+  {!! Html::style('assets/public/css/admin/_all-skins.min.css') !!}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -26,12 +26,12 @@
         <ul class="nav navbar-nav">
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../frontend/template/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="{{ asset('assets/public/img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <li class="user-header">
-                <img src="../../frontend/template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ asset('assets/public/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
                 <p>
                   Alexander Pierce - Web Developer
                   <small>Member since Nov. 2012</small>
@@ -68,7 +68,7 @@
     <section class="sidebar">
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../frontend/template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="{{ asset('assets/public/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -168,6 +168,6 @@
 </div>
 <script src="../../frontend/template/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../../frontend/template/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../../frontend/template/dist/js/adminlte.min.js"></script>>
+<script src="../../frontend/template/dist/js/adminlte.min.js"></script>
 </body>
 </html>
