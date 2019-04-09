@@ -35,6 +35,8 @@ Route::namespace('Admin')->group(function () {
         Route::get('password/reset/{token}', 'ResetPasswordController@showResetForm')->name('admin.password.reset');
         Route::post('password/reset', 'ResetPasswordController@reset');
         Route::get('password/confirm', 'ResetPasswordController@showConfirmForm')->name('admin.password.confirm');
+        Route::get('/redirect/{social}', 'SocialAuthController@redirect');
+        Route::get('/callback/{social}', 'SocialAuthController@callback');
     });
     Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'], function() {
         Route::get('/', 'HomeController@index')->name('admin.home');
